@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(170, 230, 230, 0.521);
+            margin:0px
+        }
+        header{
+                background-color: lightskyblue;
+                padding: 10px;
+                margin: 10px;
+        }
+        
+        main{
+            background-color: rgb(0, 131, 245);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 12px;
+        }
+        article{
+            background-color: aliceblue;
+
+        }
+        article > aside {
+            background-color: rgb(99, 115, 129);
+            text-align: center;
+        }
+
+        footer{
+            background-color: black;
+            color: #ffffff;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        nav{
+            background-color: lightgoldenrodyellow;
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.61);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Essa parada</h1>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+</header>
+    <main>
+        <section id="musicas">
+
+        </section>
+        <section id="assunto">
+            <article>
+                <h2>VIDA VAZIA</h2>
+                <p>Depois que você foi embora
+                    A solidão entrou, trancou a porta
+                    E não me deixa mais...
+                    Eu já tentei sair
+                    Tentei fugir, não consegui
+                    Eu já não tenho paz...
+                    Até o meu sorriso é tão sem graça
+                    Não há nada que desfaça
+                    Essa tristeza em meu olhar...
+                    O que é que eu vou fazer pra te esquecer?
+                    O que é que eu vou fazer pra não sofrer?
+                    O que é que eu faço prá você voltar
+                    Pra minha vida?</p>
+                    <aside>
+                        <p>Artigo feito para quem sofre</p>
+                    </aside>
+            </article>        
+        </section>
+    </main>
+    <footer>
+        Sofrendo com Bruno e Marrone
+    </footer>
+    
+</body>
+</html>

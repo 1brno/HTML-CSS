@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(167, 221, 247);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(47, 0, 255);
+   
+}
+h1#top1{
+    text-align: center;
+    color: rgb(175, 83, 98);
+    background-color: rgba(1, 1, 146, 0.397);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    color: rgb(43, 56, 63) ;
+}
+.tinta{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+
+}
+.sal{
+    color: rgb(255, 166, 0);
+    font-weight: bold;
+}
+.pimenta{
+        color: rgb(255, 0, 221);
+}
+
