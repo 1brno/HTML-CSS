@@ -11,6 +11,7 @@
     table{
         width: 550px;
         border-collapse: collapse;
+        position: relative;
     }
     td, th {
         border: 1px solid black;
@@ -20,10 +21,25 @@
         background-color: rgb(161, 161, 161);
         color: aliceblue;
     }
+    thead > tr > th{
+        position: sticky;
+        top: -1;
+        background-color: rgb(161, 161, 161);
+    }
 
     td.num{
         text-align: right;
     }
+    caption{
+        font-size: large;
+        font-weight: bold;
+        padding: 5px;
+        background-color: aquamarine;
+    }
+    tbody > tr:nth-child(odd){
+        background-color: rgb(226, 225, 225);
+    }
+
 </style>
     <title>TABELAS</title>
 </head>
@@ -31,10 +47,11 @@
     <h1>tabelas grandes</h1>
 
     <table>
+        <caption>População dos Estados</caption>
         <thead>
             <tr>
-                <th>ESTADO</th>
-                <th>População</th>
+                <th scope="col">ESTADOS</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -57,8 +74,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td>0000</td>
+                <th scope="row">Total de Habitantes</th>
+                <td>509 000 943</td>
             </tr>
         </tfoot>
 
