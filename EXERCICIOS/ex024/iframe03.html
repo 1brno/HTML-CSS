@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #tela{
+            width: 96vh;
+            height: 350px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <ul>
+        <li> <a href="paginas-extras/pag01.html" target="tv">Primeira Pg</a></li>
+        <li> <a href="paginas-extras/pag02.html" target="tv">Segunda Pg</a></li>
+        <li> <a href="paginas-extras/pag03.html" target="tv">Terceira Pg</a></li>
+    </ul>
+    <iframe id="tela" name="tv" srcdoc="<h1>Faça uma escolha</h1><img src='imgs/loud.png'>"">
+        <p>seu navegador não é compativel</p>
+    </iframe>  
+</body>
+</html>
