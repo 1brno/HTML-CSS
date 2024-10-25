@@ -8,13 +8,25 @@
         div.container{
                 display: flex;
                 background-color: rgb(144, 199, 247);
-                
+                flex-flow: row wrap;
             }
             div.item{
                 background-color: rgb(195, 247, 202);
                 border: 1px solid rgb(234, 255, 0);
-                flex: auto;
-                
+                text-align: center;
+                flex-basis: 200px;
+            }
+            #cxA{
+                flex-shrink:2 ;
+                flex-grow: 0; 
+            }
+            #cxB{
+                flex-shrink:1 ;
+                flex-grow: 2;
+            }
+            #cxC{
+               flex-shrink:1 ;
+               flex-grow: 5; 
             }
     </style>
     <title>Flexible box</title>
@@ -22,13 +34,10 @@
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+
 
     </div>
     
