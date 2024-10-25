@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 580px)">
     <title>Menu TotalFlex </title>
 </head>
 <body>
     <header>
         <h1>Aprenda</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
         <nav>
             <a href="#">Number 1</a>
             <a href="#">Number 2</a>
@@ -23,5 +26,22 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed pariatur vel voluptatum reiciendis. Est eius a facere iusto corporis illo at! Cumque reiciendis a iusto minima vero enim provident corporis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ratione saepe porro maiores eveniet neque blanditiis sed, quis, perspiciatis, eaque ad! Beatae voluptatum exercitationem culpa explicabo cum eos veniam aliquid?</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate dolorum enim dolores iure mollitia? Tenetur a itaque quisquam totam, aliquam illo odio architecto corporis sunt laudantium? Quibusdam maiores recusandae odio.</p>
     </main>
+    <script>
+        function mudouTamanho(){
+            if(window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+
+        }
+        function clickMenu(){
+          if (itens.style.display == 'block') {
+              itens.style.display = 'none'
+        } else {
+              itens.style.display = 'block'
+        }
+    }
+    </script>
 </body>
 </html>
